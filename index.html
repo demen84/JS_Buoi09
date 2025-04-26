@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework-JavaScript</title>
+
+    <!-- LINK JAVASCRIPT -->
+    <script src="./js/luongNhanvien.js" defer></script>
+    <script src="./js/tinhTrungbinh.js" defer></script>
+    <script src="./js/quyDoitiente.js" defer></script>
+    <!-- MAIN CSS -->
+     <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>BÀI TẬP JAVASCRIPT</h1>
+    <hr>
+    <!-- BÀI 1: Tính lương nhân viên -->
+    <section>
+        <fieldset>
+            <legend>Bài 1. Tính lương nhân viên</legend>
+            <label>Lương 1 ngày:</label>
+            <input type="text" id="luong1ngay" value="100000" disabled>
+            <label>Số ngày làm việc:</label>
+            <input type="number" id="songaylamviec" oninput="this.value = this.value.slice(0, 2)">
+            <button onclick="hamTinhLuong()">Tính lương</button>
+            <p>Lương nhân viên: <span id="pLuongThang"></span></p>
+        </fieldset>
+    </section>
+    <br>
+    <!-- BÀI 2: Tính giá trị trung bình của 3 số -->
+     <section>
+        <fieldset>
+            <legend>Bài 2. Tính giá trị trung bình của 5 số thực</legend>
+            <label>Số 1</label>
+            <input type="number" id="so1">
+            <label>Số 2</label>
+            <input type="number" id="so2">
+            <label>Số 3</label>
+            <input type="number" id="so3">
+            <label>Số 4</label>
+            <input type="number" id="so4">
+            <label>Số 5</label>
+            <input type="number" id="so5">
+            <button id="btnTrungBinh">Tính trung bình</button>
+            <p>Giá trị trung bình: <span id="pGiatriTB"></span></p>
+        </fieldset>
+     </section>
+
+    <br>
+    <!-- BÀI 3: Quy đổi tiền tệ -->
+     <section>
+        <fieldset>
+            <legend>Bài 3. Quy đổi tiền tệ</legend>
+            <label>Tỷ giá đô la Mỹ (USD):</label>
+            <input type="text" id="tyGiaUSD" value="25800" disabled>
+            <label>Nhập số tiền USD cần quy đổi:</label>
+            <input type="text" id="soTienUSD" value="">
+            <button id="btnQuyDoi">Quy đổi</button>
+            <p>Số tiền VNĐ: <span id="pSoTienVND"></span></p>
+        </fieldset>
+     </section>
+
+     <br>
+
+    <!-- BÀI 4: Tính diện tích hình chữ nhật -->
+    <section>
+        <fieldset>
+            <legend>Bài 4. Tính diện tích & chu vi hình chữ nhật</legend>
+            <label>Chiều dài:</label>
+            <input type="text" id="chieuDai">
+            <label>Chiều rộng:</label>
+            <input type="text" id="chieuRong">
+            <button id="btnTinhtoan">Tính Chu vi & Diện tích</button>
+            <p>Chu vi hình chữ nhật: <span id="pChuvi"></span></p>
+            <p>Diện tích hình chữ nhật: <span id="pDientich"></span></p>
+        </fieldset>
+    </section>
+
+    <br>
+
+    <!-- BÀI 5: Tính tổng 2 ký số -->
+     <section>
+        <fieldset>
+            <legend>Bài 5. Tính tổng 2 ký số</legend>
+            <label>Nhập số nguyên dương có 2 chữ số:</label>
+            <input type="number" id="soNguyenDuong" oninput="this.value = this.value.slice(0, 2)">
+            <button onclick="getTongHaiKySo()">Tính tổng</button>
+            <p>Tổng 2 ký số: <span id="pTongKySo"></span></p>
+        </fieldset>
+     </section>
+    <script src="./js/hinhChuNhat.js"></script>
+    <script src="./js/tongHaiKySo.js"></script>
+</body>
+</html>
