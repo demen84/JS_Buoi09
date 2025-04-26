@@ -23,3 +23,4 @@ hamHinhChuNhat.onclick = function() {
     //Xuất ra kết quả:
     document.getElementById("pDientich").innerHTML = dienTich.toLocaleString(); // Hiển thị diện tích
     document.getElementById("pChuvi").innerHTML = chuVi.toLocaleString();
+}

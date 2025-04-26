@@ -21,3 +21,4 @@ function getTongHaiKySo() {
     let tongHaiKySo = Number(soDonVi) + Number(soChuc); // Tổng 2 ký số
     //Xuất ra kết quả:
     document.getElementById("pTongKySo").innerHTML = tongHaiKySo;
+}
